@@ -1,0 +1,48 @@
+$fontStack: GillSans, Calibri, Trebuchet, sans-serif;
+$headerMargin: 70px 0;
+$formMaxWidth: 400px;
+
+
+html {
+	font-family: $fontStack;
+}
+body {
+	width: 100%; min-width: 400px;
+	height: 100%;
+}
+strong {
+    font-weight: bold;
+}
+/* Top breadcrumb */
+.breadcrumb, .breadcrumb:last-child {
+    color: rgba(255,255,255,0.7);
+	cursor: default; pointer-events: none;
+}
+.breadcrumb.active{
+	color:#fff;
+}
+/* Screen */
+.screen {
+	display: none;
+}
+.screen.active {
+	display: block;
+}
+/* Header text */
+.donationHeader {
+	margin: $headerMargin;
+}
+/* Donation form */
+#makeDonationFormContainer {
+	margin: 0 auto;
+	max-width: $formMaxWidth;
+
+
+	.input-field {
+		margin: 10px auto 30px;
+	}
+}
+/* History Table */
+table.striped>tbody>tr>td {
+    padding-left: 35px;
+}
